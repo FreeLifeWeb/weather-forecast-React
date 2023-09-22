@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url('./background/природа.jpg'); /* Путь к картинке */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    filter: brightness(50%); /* затемнение картинки */
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.search {
+    text-align: center;
+    padding: 1rem;
+}
+
+input {
+    margin-top: 20px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    color: #f8f8f8;
+}
+
+::placeholder {
+    color: #f8f8f8;
+}
+
+.weather {
+    width: 600px;
+    border-radius: 6px;
+    box-shadow: 20px -2px 20px 2px rgb(0 0 0 / 70%);
+    color: #fff;
+    margin: 20px auto 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.weather-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+}
+
+.weather-icon {
+    width: 100px;
+}
+
+.temperature {
+    font-weight: 600;
+    font-size: 80px;
+    width: auto;
+    letter-spacing: -1px;
+    margin: 10px 0;
+}
+
+.details {
+    width: 100%;
+    padding-left: 220px;
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-label {
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.parameter-label.top {
+    border-bottom: 1px solid #fff;
+}
+
+.err {
+    padding-top: 30px;
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+}
