@@ -2,7 +2,7 @@ const API_KEY = '754752838e0d460f46af446d5afeb733';
 export async function fetchData(cityName) {
     try {
         const response = await fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
         );
 
         if (!response.ok) {
